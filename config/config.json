@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "dudwo123",
-    "database": "nodejsServer",
-    "host": "127.0.0.1",
+    "username": "admin",
+    "password": "summarmysql",
+    "database": "summar",
+    "host": "summar.cv9xsydusdbz.ap-northeast-2.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
