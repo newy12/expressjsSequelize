@@ -1,5 +1,5 @@
 const db = require("../models");
-const User = db.users;
+const User = db.user;
 
 const addUser = async (req, res) => {
     let info = {
@@ -17,7 +17,7 @@ const addUser = async (req, res) => {
   
   const getUser = async (req, res) => {
     let id = req.params.id;
-    let user = await User.findOne({ where: { id: id } }).catch((err) =>
+    let user = await User.findOne({ where: { user_seq: id } }).catch((err) =>
       console.log(err)
     );
     res.status(200).send(user);
