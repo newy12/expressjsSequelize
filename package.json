@@ -5,5 +5,24 @@
     "mysql2": "^3.0.1",
     "sequelize": "^6.28.0",
     "sequelize-auto": "^0.8.8"
-  }
+  },
+  "name": "sequelize",
+  "version": "1.0.0",
+  "description": "service",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newy12/expressjsSequelize.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/newy12/expressjsSequelize/issues"
+  },
+  "homepage": "https://github.com/newy12/expressjsSequelize#readme"
 }
