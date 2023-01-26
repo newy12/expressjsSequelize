@@ -1,4 +1,5 @@
-const db = require("../models");
+var path = process.cwd();
+const db = require(path+"/models");
 const User = db.user;
 
 const addUser = async (req, res) => {

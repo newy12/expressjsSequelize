@@ -11,8 +11,8 @@ app.set("port", process.env.PORT || 8088);
 app.use(cors(corOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
-const router = require("./routers/UserRouter.js");
+var path = process.cwd();
+const router = require(path+"/routers/UserRouter.js");
 app.use("/api", router);
 
 app.get("/", (req, res) => {
