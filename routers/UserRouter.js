@@ -1,7 +1,5 @@
-//const userController = require("../controllers/userController.js");
+const userController = require("../controllers/userController.js");
 //const userController = require("/Users/yjkims-mtn/Desktop/nodejs-Project/expressjs/expressjsSequelize/controllers/userController");
-const userController = require("/home/ubuntu/expressjsSequelize/controllers/userController.js");
-
 const router = require("express").Router();
 
 router.post("/addUser", userController.addUser);
