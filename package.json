@@ -4,13 +4,13 @@
     "express": "^4.18.2",
     "mysql2": "^3.0.1",
     "sequelize": "^6.28.0",
-    "sequelize-auto": "^0.8.8"
+    "sequelize-auto": "^0.8.8",
+    "uuid-apikey": "^1.5.3"
   },
   "name": "sequelize",
   "version": "1.0.0",
   "description": "service",
   "main": "app.js",
-  "devDependencies": {},
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"

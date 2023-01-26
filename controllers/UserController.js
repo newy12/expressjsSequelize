@@ -1,6 +1,7 @@
 var path = process.cwd();
 const db = require(path+"/models");
 const User = db.user;
+var uuid = require('../app.js');
 
 const addUser = async (req, res) => {
     let info = {
@@ -18,10 +19,18 @@ const addUser = async (req, res) => {
   
   const getUser = async (req, res) => {
     let id = req.params.id;
-    let user = await User.findOne({ where: { user_seq: id } }).catch((err) =>
-      console.log(err)
-    );
+    console.log("uuidKey :  ",uuid.test);
+    var apiKey = req.get('api-key');
+    if(apiKey == uuid.test){
+      let user = await User.findOne({ where: { user_seq: id } }).catch((err) =>
+      console.log(err)  );
     res.status(200).send(user);
+    }
+    return res.status(400).json({
+      status: 'error',
+      error: 'req body cannot be empty',
+    });
+  
   };
 
   const updateUser = async (req, res) => {
