@@ -1,3 +1,4 @@
+
 var DataTypes = require("sequelize").DataTypes;
 var _banner = require("./banner");
 var _feed = require("./feed");
